@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans";
+}
+
+
+
+header {
+    background-color: #f6f2f2;
+}
+
+header nav {
+    height: 90px;
+    background-color: #313030;
+    text-align: center;
+}
+
+header nav a {
+    display: inline-block;
+    color: white;
+    line-height: 80px;
+    padding: 10px 25px 0 25px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav a.active {
+    display: inline-block;
+    background-color: #ff3f40;
+    color: white;
+    line-height: 80px;
+    padding: 10px 25px 0 25px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.present {
+    padding-bottom: 60px;
+}
+
+.present .head,
+.services .head {
+    width: 560px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 100px;
+}
+
+.present .head h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.present .head .description,
+.services .description {
+    color: #494848;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    display: inline-block;
+}
+
+.present .video {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 110px;
+    padding-bottom: 80px;
+
+}
+
+.present .video .video-content {
+    width: 550px;
+    height: 360px;
+    display: inline-block;
+    box-shadow: 0 0 10px 2px black;
+    margin-left: 120px;
+    margin-right: 5px;
+}
+
+.services .container {
+    border-bottom: 1px solid rgb(236, 236, 236);
+
+}
+
+.services .container h2,
+.gallery .container h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.block-position {
+    display: inline-block;
+    width: 280px;
+    height: 260px;
+    margin-left: 40px;
+    margin-bottom: 70px;
+}
+
+.block-position img {
+    padding-bottom: 30px;
+}
+
+.block-position h3 {
+    padding-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.block-position p {
+    line-height: 30px;
+    font-size: 18px;
+
+}
+
+.gallery .container h2 {
+    text-align: center;
+    margin-top: 105px;
+}
+
+.gallery .container p {
+    width: 510px;
+    text-align: center;
+    margin: auto;
+    padding-top: 35px;
+}
+
+.gallery .container .line {
+    margin: 40px auto 80px auto;
+}
+
+
+
+.men .container .line {
+    margin-left: 0px;
+
+}
+
+.gallery-nav {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 60px 273px;
+}
+
+.gallery-nav a {
+
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #494848;
+}
+
+.gallery-nav a:hover {
+    color: red;
+}
+
+.gallery-images {
+    width: 295px;
+    height: 295px;
+    background-size: cover;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.men .container h2 {
+    text-align: left;
+}
+
+.men .container p {
+    width: 455px;
+    text-align: left;
+    color: #494848;
+    margin-left: 0px;
+}
+
+.men-images {
+    width: 325px;
+    height: 455px;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 65px;
+    vertical-align: middle;
+}
+
+.men-images img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: inline-block;
+}
+
+.men-contacts {
+    box-sizing: border-box;
+    width: 850px;
+    height: 455px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.men .container .description {
+    padding: 35px 0;
+}
+
+.men-nav {
+    margin-bottom: 85px;
+}
+
+.men-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+    margin-right: 30px;
+
+}
+
+.kot {
+    width: 195px;
+    height: 210px;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 19px;
+}
+
+.kot img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.kot1 {
+    width: 195px;
+    height: 210px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.kot1 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.meil .container {
+    height: 510px;
+    width: 1580px;
+    background-image: url(img/background.jpg);
+    background-size: 1580px 510px;
+    padding: 0;
+    margin-top: 110px;
+    margin-left: -150px;
+}
+
+
+.meil .container .description {
+    background-image: none;
+    text-align: center;
+    color: white;
+}
+
+
+.meil .container .description h4 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 100px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.meil .container .description p {
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0px;
+    width: 1580px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+input[type='email'] {
+    height: 80px;
+    width: 480px;
+    border-radius: 10px;
+    margin-left: 410px;
+    padding-left: 20px;
+}
+
+input[type='submit'] {
+    height: 80px;
+    width: 215px;
+    background-color: #ff3f40;
+    color: white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.feedback .container p {
+    width: 730px;
+}
+
+
+
+.paramform {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.paramform {
+    width:750px;
+    height: 490px;
+    font-size: 0px;
+    display: inline-block;
+}
+
+
+.paramform input[name='name'] {
+    height: 70px;
+    width: 290px;
+    border-radius: 10px;
+    border-color: #e5e5e5;
+    padding-left: 50px;
+    background-color: #e5e5e5;
+
+}
+
+.paramform input[type='email'] {
+    height: 70px;
+    width: 290px;
+    border-radius: 10px;
+    border-color: #e5e5e5;
+    padding-left: 50px;
+    background-color: #e5e5e5;
+    margin-left: 60px;
+
+}
+
+.paramform textarea[name='name'] {
+    height: 250px;
+    width: 695px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #676767;
+    margin-bottom: 48px;
+    margin-top: 60px;
+}
+
+
+.paramform input[type='submit'] {
+    height: 80px;
+    width: 745px;
+    background-color: #ff3f40;
+    color: white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.contactinfo {
+    width: 480px;
+    height: 540px;
+    background-color: #2d2d2d;
+    display: inline-block;
+    margin-left: 25px ;
+    color: white;
+}
+
+.contactinfo1{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 34px;
+    color: #d5d5d5;
+    text-transform: uppercase;
+    padding: 140px 0 45px 70px;
+    display: block;
+}
+
+.contactinfo2{
+    font-size: 16px;
+    width: 290px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #d5d5d5;
+    display: block;
+    padding-left: 70px;
+}
+
+
+
+
+footer {
+    background-color: #313030;
+    width: 1280px;
+    height: 110px;
+    font-size: 0px;
+    margin-top: 50px;
+}
+
+span.footer-text {
+    display: inline-block;
+    color: #b8b8b8;
+    line-height: 110px;
+    font-size: 16px;
+    margin-left: 170px;
+    vertical-align: middle;
+}
+
+.footer-contacts {
+    width: 700px;
+    display: inline-block;
+    text-align: right;
+}
+
+.footer-contacts img {
+    height: 33px;
+    width: 33px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+
+/* common */
+
+.container {
+    width: 1280px;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+.button {
+    line-height: 55px;
+    padding: 0 65px;
+    border: 2px solid #ff3f40;
+    display: inline-block;
+    color: #313030;
+    text-decoration: none;
+    border - radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #ff3f40;
+    color: white;
+}
+
+.last-line {
+    display: inline-block;
+    width: 100%;
+}
+
+.block {
+
+    display: inline-block;
+    font-weight: normal;
+    color: #494848;
+    width: 670px;
+    padding-top: 100px;
+}
+
+.line {
+    height: 3px;
+    width: 135px;
+    background-color: red;
+
+}

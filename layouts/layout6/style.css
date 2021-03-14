@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans";
+}
+
+body {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* color 1 */
+#honeycomb1,
+#honeycomb3,
+#honeycomb7,
+#honeycomb13,
+#honeycomb17,
+#honeycomb19 {
+    background-color: rgb(136, 34, 34)
+}
+
+#honeycomb1:before,
+#honeycomb3:before,
+#honeycomb7:before,
+#honeycomb13:before,
+#honeycomb17:before,
+#honeycomb19:before {
+    border-bottom: 40px solid rgb(136, 34, 34);
+}
+
+#honeycomb1:after,
+#honeycomb3:after,
+#honeycomb7:after,
+#honeycomb13:after,
+#honeycomb17:after,
+#honeycomb19:after {
+    border-top: 40px solid rgb(136, 34, 34);
+}
+
+/* color 2 */
+#honeycomb2,
+#honeycomb4,
+#honeycomb8,
+#honeycomb12,
+#honeycomb16 {
+    background-color: rgb(199, 16, 16);
+}
+
+#honeycomb2:before,
+#honeycomb4:before,
+#honeycomb8:before,
+#honeycomb12:before,
+#honeycomb16:before {
+    border-bottom: 40px solid rgb(199, 16, 16);
+}
+
+#honeycomb2:after,
+#honeycomb4:after,
+#honeycomb8:after,
+#honeycomb12:after,
+#honeycomb16:after {
+    border-top: 40px solid rgb(199, 16, 16);
+}
+
+/* color 3 */
+#honeycomb5,
+#honeycomb9,
+#honeycomb11,
+#honeycomb15 {
+    background-color: rgb(85, 16, 16);
+}
+
+#honeycomb5:before,
+#honeycomb9:before,
+#honeycomb11:before,
+#honeycomb15:before {
+    border-bottom: 40px solid rgb(85, 16, 16);
+}
+
+#honeycomb5:after,
+#honeycomb9:after,
+#honeycomb11:after,
+#honeycomb15:after {
+    border-top: 40px solid rgb(85, 16, 16);
+}
+
+/* color 4 */
+#honeycomb6,
+#honeycomb10,
+#honeycomb14 {
+    background-color: rgb(51, 16, 16);
+}
+
+#honeycomb6:before,
+#honeycomb10:before,
+#honeycomb14:before {
+    border-bottom: 40px solid rgb(51, 16, 16);
+}
+
+#honeycomb6:after,
+#honeycomb10:after,
+#honeycomb14:after {
+    border-top: 40px solid rgb(51, 16, 16);
+}
+
+/* color 5 */
+#honeycomb18,
+#honeycomb20 {
+    background-color: rgb(153, 68, 68);
+}
+
+#honeycomb18:before,
+#honeycomb20:before {
+    border-bottom: 40px solid rgb(153, 68, 68);
+}
+
+#honeycomb18:after,
+#honeycomb20:after {
+    border-top: 40px solid rgb(153, 68, 68);
+}
+#honeycomb1{
+margin-left: 150px;
+margin-top: 70px;
+}
+
+#honeycomb3{
+    margin-left: 75px;
+    }
+
+#honeycomb14{
+    margin-left: 395px;
+}
+
+#honeycomb19{
+    margin-left: 790px;
+}
+
+.content{
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    margin-left: -60px;
+    width: 1200px;
+    height: 310px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    font-size: 80px;
+}
+#center{
+  text-align: center;
+}
+#right{
+    text-align: right;
+  }
+/* common */
+
+.hexagon {
+    position: relative;
+    width: 150px;
+    height: 90px;
+    margin: 0px 4px 43px 0;
+    display: inline-block;
+    z-index: 1;
+}
+
+.hexagon:before {
+    bottom: 100%;
+}
+
+.hexagon:after {
+    top: 100%;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
