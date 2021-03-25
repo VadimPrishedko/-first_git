@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(57, 123, 221);
+    width: 800px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    margin-top: 300px;
+}
+/* circle */
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin-right: 100px;
+    position: relative;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+div:nth-child(1){
+    animation-name: bounce1;
+    
+}
+div:nth-child(2){
+    animation-name: bounce2;
+   position: absolute;
+    z-index: 0;
+}
+div:nth-child(3){
+    animation-name: bounce3;
+}
+div:nth-child(4){
+    animation-name: bounce4;
+}
+div:nth-child(5){
+    animation-name: bounce5;
+    margin-right: 0;
+}
+
+@keyframes bounce1 {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        
+    }
+}
+@keyframes bounce2 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+    }
+}
+
+@keyframes bounce3 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+    }
+}
+
+@keyframes bounce4 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+        
+    }
+}
+@keyframes bounce5 {
+    from {
+        left: 0;
+    }
+
+    to {
+        transform: scale(0);;
+    }
+}
