@@ -1,90 +1,95 @@
-body {
-    background-color: rgb(57, 123, 221);
-    width: 800px;
+* {
+    padding: 0;
     margin: 0 auto;
-    z-index: 1;
-    position: relative;
-    margin-top: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
-/* circle */
-div {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: white;
+
+header {
+    height: 90px;
+    width: 1250px;
+}
+
+header div,
+header h1,
+header nav {
     display: inline-block;
-    margin-right: 100px;
-    position: relative;
-    animation-duration: 0.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    vertical-align: middle;
 }
 
-div:nth-child(1){
-    animation-name: bounce1;
+header div,
+header h1 {
+
+    margin-top: 22px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(80, 148, 242);
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin: 22px 5px 0 140px;
+}
+
+header h1 {
+    font-size: 45px;
+
+}
+
+header nav {
+    float: right;
+    margin-top: 50px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+    margin: 0 8px;
+    padding-bottom: 15px;
+
+
+}
+
+header nav a:hover {
+    border-bottom: 2px solid rgb(80, 148, 242);
+    font-weight: bolder;
+    margin: 0 8px;
+}
+
+body{
+    width: 1250px;
+    height: 480px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        width: 100%;
+        box-sizing: border-box;
+    }
     
-}
-div:nth-child(2){
-    animation-name: bounce2;
-   position: absolute;
-    z-index: 0;
-}
-div:nth-child(3){
-    animation-name: bounce3;
-}
-div:nth-child(4){
-    animation-name: bounce4;
-}
-div:nth-child(5){
-    animation-name: bounce5;
-    margin-right: 0;
+    
+
+
+
+
+
 }
 
-@keyframes bounce1 {
-    from {
-        transform: scale(0);
-    }
 
-    to {
-        
-    }
-}
-@keyframes bounce2 {
-    from {
-        left: 0;
-    }
 
-    to {
-        left: 200px;
-    }
-}
-
-@keyframes bounce3 {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: 200px;
-    }
-}
-
-@keyframes bounce4 {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: 200px;
-        
-    }
-}
-@keyframes bounce5 {
-    from {
-        left: 0;
-    }
-
-    to {
-        transform: scale(0);;
-    }
-}
+/* .topmenu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+   */
