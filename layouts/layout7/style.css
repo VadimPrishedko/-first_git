@@ -1,95 +1,338 @@
 * {
-    padding: 0;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+  padding: 0;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+body {
+  width: 1250px;
 }
 
 header {
-    height: 90px;
-    width: 1250px;
+  height: 90px;
+  box-sizing: border-box;
+
+
 }
 
 header div,
 header h1,
 header nav {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 header div,
 header h1 {
 
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: rgb(80, 148, 242);
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    margin: 22px 5px 0 140px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(80, 148, 242);
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  margin: 22px 5px 0 140px;
 }
 
 header h1 {
-    font-size: 45px;
+  font-size: 45px;
 
 }
 
 header nav {
-    float: right;
-    margin-top: 50px;
+  float: right;
+  margin-top: 50px;
 }
 
 header nav ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 header nav ul li a {
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(145, 145, 145);
-    margin: 0 8px;
-    padding-bottom: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(145, 145, 145);
+  margin: 0 8px;
+  padding-bottom: 15px;
 
 
 }
 
 header nav a:hover {
-    border-bottom: 2px solid rgb(80, 148, 242);
-    font-weight: bolder;
-    margin: 0 8px;
+  border-bottom: 4px solid rgb(80, 148, 242);
+  font-weight: bolder;
+  margin: 0 8px;
 }
 
-body{
-    width: 1250px;
-    height: 480px;
-    box-sizing: border-box;
+.topmenu {
+  margin-right: 140px;
 }
+
+main {
+  height: 480px;
+  background: url(img/1.png) no-repeat center;
+  position: relative;
+}
+
+main img,
+main div {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+}
+
+main img {
+  margin: 30px 100px 0 170px;
+}
+
+main div h2 {
+  font-size: 40px;
+  margin: 150px 0 10px 0;
+}
+
+main div p {
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.link {
+  box-sizing: border-box;
+  height: 40px;
+  width: 160px;
+  background-color: rgb(80, 148, 242);
+  margin: 30px 0 0 20px;
+  text-align: center;
+}
+
+main div a {
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+
+.categories {
+  box-sizing: border-box;
+  height: 280px;
+  width: 260px;
+  text-align: center;
+}
+
+.categories img {
+  margin: 0;
+
+}
+
+.categories h3 {
+  color: rgb(80, 148, 242);
+  margin: 30px 0 10px 0;
+}
+
+.categories p {
+  color: rgb(128, 116, 116);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.conteiner-two {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.basket {
+  box-sizing: border-box;
+  height: 350px;
+  width: 370px;
+}
+
+.basket img {
+  margin: 40px 0;
+}
+
+.basket h2,
+.content h2 {
+  margin: 0;
+  color: rgb(145, 145, 145);
+}
+
+
+.content {
+  box-sizing: border-box;
+  height: 310px;
+  width: 460px;
+}
+
+.content h2 {
+  margin: 70px 0 20px 0;
+  font-size: 30px;
+}
+
+.content p {
+  color: rgb(173, 162, 162);
+  font-size: 18px;
+}
+
+footer {
+  margin: 120px 0 30px 0;
+  text-align: center;
+  color: rgb(173, 162, 162);
+  border-top: solid 2px #ccc;
+    line-height: 50px;
+}
+
+
 
 @media screen and (max-width: 640px) {
-    header {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    
+  body {
+    width: 100%;
+  }
 
+  .logo {
+    margin-left: 30px;
+  }
 
+  .submenu {
+    display: none;
+  }
 
+  .burger {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    background-color: rgb(80, 148, 242);
+    text-align: center;
+    right: 0%;
+    margin-right: 20px;
+  }
 
-
-}
-
-
-
-/* .topmenu {
+  .burger-line {
     width: 35px;
     height: 5px;
-    background-color: black;
-    margin: 6px 0;
+    border-radius: 2px;
+    background-color: white;
+    margin: 3px auto;
   }
-   */
+
+  main {
+    width: 100%;
+    height: 250px;
+  }
+
+  main img {
+    width: 30%;
+    margin: 20px 30px 15px 30px;
+  }
+
+  main div {
+    width: 45%;
+    margin: 20px 0 10px 30px;
+
+  }
+
+  main div h2 {
+    font-size: 24px;
+    margin: 0;
+
+  }
+
+  main div p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 40px;
+  }
+
+  .link {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .conteiner {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .categories {
+    width: 100%;
+    height: 190px;
+    margin: 0;
+    border-bottom: solid 2px #ccc;
+  }
+
+
+  .categories img,
+  .categories h3,
+  .categories p {
+    display: inline-block;
+
+  }
+
+
+  .categories img {
+    width: 25%;
+    margin: 20px 15px 15px 20px;
+  }
+
+  .categories div {
+    box-sizing: border-box;
+    width: 60%;
+    text-align: left;
+  }
+
+  .categories h3 {
+    font-size: 30px;
+
+  }
+
+  .categories p {
+    font-size: 20px;
+  }
+
+  .conteiner-two {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .basket{
+    width: 100%;
+    height: 220px;
+    margin: 30px 0 0 0;
+
+  }
+
+  .content{
+    width: 80%;
+    margin: 0 auto;
+    height: 320px;
+    text-align: left;
+   
+  }
+
+  .content h2{
+    margin: 0;
+  }
+
+  footer{
+    border-top: solid 2px #ccc;
+    margin-top: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
