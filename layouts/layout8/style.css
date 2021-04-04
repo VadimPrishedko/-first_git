@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.conteiner {
+  background-image: url("img/bg.png");
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 0.9px;
+}
+
+.container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(0) scale(1, 1);
+}
+
+header {
+  padding-top: 70px;
+  height: 450px;
+}
+
+
+
+h1 {
+  font-size: 90px;
+  font-style: italic;
+  margin-left: 110px;
+  color: rgb(183, 187, 189);
+  display: inline-block;
+}
+
+header nav {
+  float: right;
+  margin-right: 50px;
+  width: 550px;
+  display: inline-block;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(183, 187, 189);
+  margin-right: 50px;
+  font-size: 22px;
+}
+
+header nav a:hover,
+header h1:hover {
+  color: white;
+}
+
+.content {
+  float: right;
+  width: 580px;
+  color: white;
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.button {
+  background-color: rgb(23, 94, 60);
+  box-shadow: 0 0 2px 2px rgb(46, 48, 47);
+  width: 150px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.coffee {
+  margin: 70px 0 0 270px;
+  position: relative;
+  z-index: 5;
+}
+
+.section {
+  background-color: white;
+  width: 1100PX;
+  display: flex;
+  padding: 100px 90px 20px 90px;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+
+.shortcut {
+  text-align: center;
+  width: 140px;
+  height: 160px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 70px;
+}
+
+.box:hover {
+  box-shadow: inset 0px 1px 0px 1px rgba(154, 147, 140);
+  margin-bottom: 500px;
+}
+
+.section .box:nth-child(1) .shortcut {
+  background-color: blue;
+}
+
+.section .box:nth-child(2) .shortcut {
+  background-color: yellow;
+}
+
+.section .box:nth-child(3) .shortcut {
+  background-color: green;
+}
+
+.section .box:nth-child(4) .shortcut {
+  background-color: orange;
+}
+
+.box h4 {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(129, 131, 133);
+  width: 260px;
+  position: relative;
+}
+
+.info {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  width: 1120px;
+  height: 600px;
+  left: 80px;
+  box-shadow: inset 0px 0px 0px 1px rgba(154, 147, 140);
+}
+
+.section .box:nth-child(1):hover .info {
+  display: block;
+}
+
+.section .box:nth-child(2):hover .info {
+  display: block;
+}
+
+.section .box:nth-child(3):hover .info {
+  display: block;
+}
+
+.section .box:nth-child(4):hover .info {
+  display: block;
+}
+
+.info img {
+  margin: 30px 0 0 150px;
+}
+
+.info h3,
+.info p {
+  padding: 10px 40px 0 50px;
+  color: rgba(154, 147, 140);
+}
+
+.info h3 {
+  font-size: 30px;
+}
+
+.info p {
+  font-size: 12px;
+}
+
+
+
+.section2 {
+  background-color: white;
+  width: 1100PX;
+  display: flex;
+  padding: 100px 90px 20px 90px;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  border-top: 1px solid rgba(154, 147, 140);
+  border-bottom: 1px solid rgba(154, 147, 140);
+  color: rgba(154, 147, 140);
+}
+
+.section2 .list {
+  padding: 0 0 0 30px;
+  line-height: 40px;
+}
+
+.list ul {
+  list-style-image: url(img/point.png);
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.section3 {
+  background-color: white;
+  width: 1100PX;
+  display: flex;
+  padding: 30px 90px 20px 90px;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  color: rgba(154, 147, 140);
+}
+
+.authorization,
+.emeil {
+  background-color: rgb(255, 102, 0);
+  width: 470px;
+  height: 110px;
+  border-radius: 5px;
+}
+
+.authorization h3,
+.emeil h3 {
+  color: white;
+  padding: 20px 0 20px 30px;
+}
+
+.authorization {
+  background-color: rgb(255, 102, 0);
+
+}
+
+.emeil {
+  background-color: rgb(14, 199, 206);
+  margin-left: 70px;
+  margin-right: 50px;
+}
+
+.emeil .button,
+.authorization .button {
+  background-color: rgb(140, 153, 153);
+  margin: 0;
+  height: 20px;
+  vertical-align: middle;
+  line-height: 20px;
+  box-shadow: none;
+}
