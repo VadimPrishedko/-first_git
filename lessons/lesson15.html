@@ -32,6 +32,11 @@
                             <li><a href="../layouts/layout7/index.html" target="_blank">Макет7</a></li>
                             <li><a href="../layouts/layout8/index.html" target="_blank">Макет8</a></li>
                             <li><a href="../layouts/layout9/index.html" target="_blank">Макет9</a></li>
+                            <li><a href="../layouts/layout10/index.html" target="_blank">Макет10</a></li>
+                            <li><a href="../layouts/layout11/index.html" target="_blank">Макет11</a></li>
+                            <li><a href="../layouts/layout12/index.html" target="_blank">Макет12</a></li>
+                            <li><a href="../layouts/layout13/index.html" target="_blank">Макет13</a></li>
+                            <li><a href="../layouts/layout14/index.html" target="_blank">Макет14</a></li>
                         </ul>
                     </li>
                     </li>
@@ -59,26 +64,54 @@
                         <li><a href="lesson12.html">Мое двенадцатое занятие</a></li>
                         <li><a href="lesson13.html">Мое тринадцатое занятие</a></li>
                         <li><a href="lesson14.html">Мое четырнадцатое занятие</a></li>
+                        <li><a href="lesson15.html">Мое пятнадцатое занятие</a></li>
+                        <li><a href="lesson16.html">Мое шестнадцатое занятие</a></li>
+                        <li><a href="lesson17.html">Мое семнадцатое занятие</a></li>
+                        <li><a href="lesson18.html">Мое восемнадцатое занятие</a></li>
+                        <li><a href="lesson19.html">Мое девятнадцатое занятие</a></li>
+                        <li><a href="lesson20.html">Мое двадцатое занятие</a></li>
                     </ul>
                 </td>
                 <td class="content">
-                    <h3>@media</h3>
-                    <p>At-правило @media в CSS связывает набор операторов, ограниченных фигурными скобками, в CSS блок,
-                        применяется при соблюдении условия одного или нескольких медиавыражений.</p>
-                    <h4>Типы</h4>
-                    <p> <b>all </b> -
-                        Подходит для всех устройств.
-
+                    <h3>CSS Flexbox</h3>
+                    <h4>display: flex</h4>
+                    <p>Каждый блок занимает всю ширину строки. Чтобы начать работать с CSS Flexbox, нужно сделать
+                        контейнер flex-контейнером</p>
+                    <h4>flex-direction</h4>
+                    <p>У flex-контейнера есть две оси: главная и перпендикулярная ей. lex-direction позволяет вращать
+                        главную ось.
                     </p>
-                    <p> <b>print</b> - 
-                        Intended for paged material and for documents viewed on screen in print preview mode. Please
-                        consult the section on paged media, and the media section of the Getting Started tutorial for
-                        information about formatting issues that are specific to paged media.
+                    <h4>justify-content
+                    </h4>
+                    <p>Отвечает за выравнивание элементов по главной оси:
                     </p>
-                    <p> <b>screen</b>  -
-                        Предназначен в первую очередь для цветных компьютерных экранов.</p>
-                    <p> <b>speech</b> -
-                        Предназначен для синтезаторов речи.</p>
+                    <p>Justify-content может принимать 5 значений:</p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                    </ul>
+                    <h4>align-items
+                    </h4>
+                    <p>Если justify-content работает с главной осью, то align-items работает с осью, перпендикулярной
+                        главной оси. Вернёмся к flex-direction: row и пройдёмся по командам align-items:</p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>stretch</li>
+                        <li>baseline</li>
+                    </ul>
+                    <h4>flex-basis
+                    </h4>
+                    <p>Отвечает за изначальный размер элементов до того, как они будут изменены другими свойствами CSS
+                        Flexbox:</p>
+                    <h4>flex
+                    </h4>
+                    <p>Заменяет flex-grow, flex-shrink и flex-basis. Значения по умолчанию: 0 (grow) 1 (shrink) auto
+                        (basis).</p>
                 </td>
             </tr>
         </table>
