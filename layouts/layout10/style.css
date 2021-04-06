@@ -6,8 +6,9 @@
 
 header {
   background-image: url(img/bg1.png);
+  background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -16,9 +17,11 @@ header {
 }
 
 .logo {
-  list-style-image: url(img/logo.png);
-  font-size: 80px;
+  list-style-image: url(img/logo1.png);
+  font-size: 30px;
   padding-left: 100px;
+  vertical-align: middle;
+  padding-top: 10px;
 }
 
 .authorization h4,
@@ -29,12 +32,12 @@ header {
 
 .authorization {
   text-align: right;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .content h2 {
   padding-top: 200px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .content p {
@@ -53,6 +56,7 @@ header {
   margin-top: 60px;
   width: 200px;
   height: 50px;
+  margin-bottom: 30px;
 }
 
 .block2 {
@@ -121,7 +125,7 @@ header {
 }
 
 .btn4 {
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 100px;
   width: 300px;
   height: 50px;
@@ -182,6 +186,7 @@ header {
 .block6 {
   background-image: url(img/bg2.png);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   text-align: center;
 }
@@ -191,7 +196,7 @@ header {
 }
 
 .block7 {
-  height: 100vh;
+  height: 100%;
   background-color: rgb(45, 49, 53);
   font-size: 30px;
 }
@@ -207,39 +212,110 @@ header {
 }
 
 .param {
-  width: 500px !important;
+  width: 450px !important;
   height: 65px;
   margin-bottom: 35px;
 }
 
-.paramtext{
-  width: 500px;
+.paramtext {
+  width: 450px;
   height: 220px;
 }
 
-.btn-param{
+.btn-param {
   text-align: right;
 }
 
-.btn5{
+.btn5 {
   width: 150px;
   height: 50px;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-footer{
+footer {
   background-color: rgb(42, 45, 51);
 }
 
-footer .logo , footer p{
-display: inline-block;
+footer .logo,
+footer p {
+  display: inline-block;
 }
 
-.social{
+.social {
   text-align: right;
-  padding-top: 40px;
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
-.social img{
-  margin-left: 40px;
+.social img {
+  margin-left: 10px;
 }
+
+
+@media screen and (max-width: 700px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex .col-7 {
+    width: 100%;
+  }
+
+  .flex .col-5 {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .footer div p{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .flex2, .flex4 {
+    
+  }
+
+  .flex2 .col-3,
+  .flex2 .col-6, .flex4 .col-6{
+    width: 100%;
+  }
+
+  .flex2 .col-3 {
+    display: flex;
+  }
+
+  .flex2 .col-3 img {
+    margin: 20px;
+  }
+
+  .flex2 .col-3 {
+    display: flex;
+    justify-content: center;
+}
+.block5 h2 {
+  font-size: 20px;
+}
+.footer{
+  flex-direction: column;
+  
+}
+
+.footer .col-9, .footer .col-3{
+  width: 100%;
+}
+.footer .col-3{
+  text-align: center;
+}
+}
+
+.flex3{
+  text-align: left;
+  margin-left: 30px;
+
+}
+
+.flex3 ul{
+  margin-left: 0;
+ }
+
